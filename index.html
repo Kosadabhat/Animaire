@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Test your anime knowledge with our collection of anime quizzes!" />
+  <title>Anime Quiz Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="title">Choose Your Anime Quiz</h1>
+  
+  <div class="description-section">
+    <p class="description-text">Welcome to the ultimate anime quiz experience! Test your knowledge across five amazing anime series. Each quiz is carefully crafted to challenge both casual fans and hardcore enthusiasts. How well do you know your favorite characters, storylines, and iconic moments?</p>
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">🎯</span>
+        <span class="feature-text">Challenging Questions</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⭐</span>
+        <span class="feature-text">Multiple Series</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🏆</span>
+        <span class="feature-text">Test Your Knowledge</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="quiz-selection">
+    <div class="quiz-card" onclick="startQuiz('naruto')">
+      <img src="assets/naruto.jpg" alt="Naruto" />
+      <h2>Naruto</h2>
+    </div>
+    <div class="quiz-card" onclick="startQuiz('aot')">
+      <img src="assets/aot.jpg" alt="Attack on Titan" />
+      <h2>Attack on Titan</h2>
+    </div>
+    <div class="quiz-card" onclick="startQuiz('blackclover')">
+      <img src="assets/blackclover.jpg" alt="Black Clover" />
+      <h2>Black Clover</h2>
+    </div>
+    <div class="quiz-card" onclick="startQuiz('Tokyo Revengers')">
+      <img src="assets/tokyo.jpg" alt="Tokyo Revengers" />
+      <h2>Tokyo Revengers</h2>
+    </div>
+    <div class="quiz-card" onclick="startQuiz('jujutsu')">
+      <img src="assets/jujutsu.jpg" alt="Jujutsu Kaisen" />
+      <h2>Jujutsu Kaisen</h2>
+    </div>
+  </div>
+
+  <script>
+    function startQuiz(anime) {
+      window.location.href = `quiz.html?anime=${anime}`;
+    }
+  </script>
+</body>
+</html>
